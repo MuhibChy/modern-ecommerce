@@ -1,0 +1,286 @@
+// Sample product data - Replace with your actual product data or API calls
+
+export const categories = [
+  { id: 'laptops', name: 'Laptops', icon: 'Laptop' },
+  { id: 'desktops', name: 'Desktops', icon: 'Monitor' },
+  { id: 'components', name: 'Components', icon: 'Cpu' },
+  { id: 'peripherals', name: 'Peripherals', icon: 'Mouse' },
+  { id: 'networking', name: 'Networking', icon: 'Wifi' },
+  { id: 'accessories', name: 'Accessories', icon: 'Headphones' },
+];
+
+export const products = [
+  // Laptops
+  {
+    id: 1,
+    name: 'MacBook Pro 16" M3 Max',
+    category: 'laptops',
+    price: 3499,
+    originalPrice: 3999,
+    image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&q=80',
+    rating: 4.9,
+    reviews: 234,
+    inStock: true,
+    featured: true,
+    description: 'Powerful laptop with M3 Max chip, 36GB RAM, 1TB SSD',
+    specs: ['M3 Max Chip', '36GB RAM', '1TB SSD', '16" Liquid Retina XDR'],
+    tags: ['new', 'bestseller'],
+  },
+  {
+    id: 2,
+    name: 'Dell XPS 15 OLED',
+    category: 'laptops',
+    price: 2299,
+    originalPrice: 2599,
+    image: 'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&q=80',
+    rating: 4.7,
+    reviews: 189,
+    inStock: true,
+    featured: true,
+    description: 'Premium Windows laptop with stunning OLED display',
+    specs: ['Intel i9-13900H', '32GB RAM', '1TB SSD', '15.6" OLED 4K'],
+    tags: ['sale'],
+  },
+  {
+    id: 3,
+    name: 'ASUS ROG Zephyrus G14',
+    category: 'laptops',
+    price: 1899,
+    originalPrice: null,
+    image: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&q=80',
+    rating: 4.8,
+    reviews: 312,
+    inStock: true,
+    featured: false,
+    description: 'Gaming laptop with AMD Ryzen 9 and RTX 4070',
+    specs: ['AMD Ryzen 9 7940HS', '16GB RAM', '1TB SSD', 'RTX 4070'],
+    tags: ['gaming'],
+  },
+  {
+    id: 4,
+    name: 'Lenovo ThinkPad X1 Carbon',
+    category: 'laptops',
+    price: 1799,
+    originalPrice: null,
+    image: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500&q=80',
+    rating: 4.6,
+    reviews: 156,
+    inStock: true,
+    featured: false,
+    description: 'Business ultrabook with legendary ThinkPad quality',
+    specs: ['Intel i7-1365U', '16GB RAM', '512GB SSD', '14" WUXGA'],
+    tags: ['business'],
+  },
+
+  // Desktops
+  {
+    id: 5,
+    name: 'Mac Studio M2 Ultra',
+    category: 'desktops',
+    price: 4999,
+    originalPrice: null,
+    image: 'https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=500&q=80',
+    rating: 4.9,
+    reviews: 98,
+    inStock: true,
+    featured: true,
+    description: 'Ultimate desktop performance for professionals',
+    specs: ['M2 Ultra Chip', '64GB RAM', '2TB SSD', 'Compact Design'],
+    tags: ['new', 'professional'],
+  },
+  {
+    id: 6,
+    name: 'Custom Gaming PC - RTX 4090',
+    category: 'desktops',
+    price: 3299,
+    originalPrice: 3599,
+    image: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=500&q=80',
+    rating: 4.8,
+    reviews: 267,
+    inStock: true,
+    featured: true,
+    description: 'High-end gaming PC with RTX 4090 and liquid cooling',
+    specs: ['Intel i9-14900K', '64GB DDR5', '2TB NVMe', 'RTX 4090'],
+    tags: ['gaming', 'bestseller'],
+  },
+
+  // Components
+  {
+    id: 7,
+    name: 'NVIDIA RTX 4080 Super',
+    category: 'components',
+    price: 1199,
+    originalPrice: 1299,
+    image: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?w=500&q=80',
+    rating: 4.7,
+    reviews: 423,
+    inStock: true,
+    featured: true,
+    description: 'Flagship graphics card for 4K gaming',
+    specs: ['16GB GDDR6X', 'Ray Tracing', 'DLSS 3.5', '320W TDP'],
+    tags: ['new', 'gaming'],
+  },
+  {
+    id: 8,
+    name: 'AMD Ryzen 9 7950X3D',
+    category: 'components',
+    price: 699,
+    originalPrice: null,
+    image: 'https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=500&q=80',
+    rating: 4.8,
+    reviews: 289,
+    inStock: true,
+    featured: false,
+    description: 'Top-tier gaming processor with 3D V-Cache',
+    specs: ['16 Cores', '32 Threads', '5.7GHz Boost', '128MB Cache'],
+    tags: ['gaming'],
+  },
+  {
+    id: 9,
+    name: 'Corsair Vengeance DDR5 64GB',
+    category: 'components',
+    price: 299,
+    originalPrice: 349,
+    image: 'https://images.unsplash.com/photo-1541348263662-e068662d82af?w=500&q=80',
+    rating: 4.6,
+    reviews: 512,
+    inStock: true,
+    featured: false,
+    description: 'High-performance DDR5 memory kit',
+    specs: ['64GB (2x32GB)', '6000MHz', 'CL30', 'RGB Lighting'],
+    tags: ['sale'],
+  },
+
+  // Peripherals
+  {
+    id: 10,
+    name: 'Logitech MX Master 3S',
+    category: 'peripherals',
+    price: 99,
+    originalPrice: null,
+    image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&q=80',
+    rating: 4.8,
+    reviews: 1234,
+    inStock: true,
+    featured: true,
+    description: 'Premium wireless mouse for productivity',
+    specs: ['8K DPI', 'Quiet Clicks', 'USB-C', 'Multi-Device'],
+    tags: ['bestseller'],
+  },
+  {
+    id: 11,
+    name: 'Keychron Q6 Pro',
+    category: 'peripherals',
+    price: 219,
+    originalPrice: null,
+    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&q=80',
+    rating: 4.9,
+    reviews: 567,
+    inStock: true,
+    featured: true,
+    description: 'Premium mechanical keyboard with QMK/VIA',
+    specs: ['Full Size', 'Hot-Swappable', 'Wireless', 'Aluminum Body'],
+    tags: ['new'],
+  },
+  {
+    id: 12,
+    name: 'Sony WH-1000XM5',
+    category: 'peripherals',
+    price: 399,
+    originalPrice: 429,
+    image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500&q=80',
+    rating: 4.9,
+    reviews: 2341,
+    inStock: true,
+    featured: true,
+    description: 'Industry-leading noise canceling headphones',
+    specs: ['30hr Battery', 'ANC', 'LDAC', 'Multipoint'],
+    tags: ['bestseller', 'sale'],
+  },
+
+  // Networking
+  {
+    id: 13,
+    name: 'ASUS RT-AX86U Pro',
+    category: 'networking',
+    price: 249,
+    originalPrice: null,
+    image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=500&q=80',
+    rating: 4.7,
+    reviews: 345,
+    inStock: true,
+    featured: false,
+    description: 'WiFi 6 gaming router with 2.5G port',
+    specs: ['WiFi 6', '5700 Mbps', 'AiMesh', 'Gaming Port'],
+    tags: ['gaming'],
+  },
+  {
+    id: 14,
+    name: 'TP-Link Deco XE75',
+    category: 'networking',
+    price: 299,
+    originalPrice: 349,
+    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&q=80',
+    rating: 4.6,
+    reviews: 234,
+    inStock: true,
+    featured: false,
+    description: 'WiFi 6E mesh system for whole home coverage',
+    specs: ['WiFi 6E', 'Tri-Band', 'Covers 7000 sq ft', '3-Pack'],
+    tags: ['sale'],
+  },
+
+  // Accessories
+  {
+    id: 15,
+    name: 'Elgato Stream Deck +',
+    category: 'accessories',
+    price: 199,
+    originalPrice: null,
+    image: 'https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500&q=80',
+    rating: 4.8,
+    reviews: 456,
+    inStock: true,
+    featured: false,
+    description: 'Advanced content creation controller',
+    specs: ['8 LCD Keys', 'Touch Strip', 'Rotary Dials', 'Customizable'],
+    tags: ['new', 'creator'],
+  },
+  {
+    id: 16,
+    name: 'Samsung T7 Shield 2TB',
+    category: 'accessories',
+    price: 179,
+    originalPrice: 219,
+    image: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=500&q=80',
+    rating: 4.7,
+    reviews: 789,
+    inStock: true,
+    featured: false,
+    description: 'Rugged portable SSD with IP65 rating',
+    specs: ['2TB Storage', '1050MB/s', 'USB 3.2', 'IP65 Rated'],
+    tags: ['sale'],
+  },
+];
+
+export const getProductById = (id) => {
+  return products.find(product => product.id === parseInt(id));
+};
+
+export const getProductsByCategory = (category) => {
+  if (!category || category === 'all') return products;
+  return products.filter(product => product.category === category);
+};
+
+export const getFeaturedProducts = () => {
+  return products.filter(product => product.featured);
+};
+
+export const searchProducts = (query) => {
+  const lowercaseQuery = query.toLowerCase();
+  return products.filter(product =>
+    product.name.toLowerCase().includes(lowercaseQuery) ||
+    product.description.toLowerCase().includes(lowercaseQuery) ||
+    product.tags.some(tag => tag.toLowerCase().includes(lowercaseQuery))
+  );
+};
